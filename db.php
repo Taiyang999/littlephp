@@ -17,9 +17,10 @@ class database
     {
         try {
             $this->_pdo = new PDO(
-                'mysql:host=localhost;dbname=dockerTest',
+                'mysql:host=192.168.99.100;dbname=dockerTest;port=8080',
                 'root',
                 ''
+
             );
         }
         catch(PDOException $e)
